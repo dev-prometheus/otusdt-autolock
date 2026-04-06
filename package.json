@@ -1,0 +1,19 @@
+{
+  "name": "otusdt-autolock-bot",
+  "version": "1.0.0",
+  "description": "Monitors OTUSDT Transfer events and auto-locks any wallet receiving the token for the first time. Runs as a standalone Node.js service on Coolify.",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "generate-keystore": "node scripts/generate-keystore.js"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4",
+    "pino": "^9.5.0"
+  }
+}
